@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#0A84FF',
+              secondary: '#E6E6E6',
+              darkBlue: '#141E33',
+              gray: '#9CA2AF',
+            }
+          },
+          screens: {
+            'sm': {'max': '639px'},
+          }
+        }
+      }
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <section class="bg-secondary sm:bg-transparent w-full h-screen py-6 flex flex-col items-center justify-center sm:p-0">
+        <div class="w-full max-w-[600px] py-8 bg-white flex flex-col items-center rounded-2xl sm:p-0">
+          <header>
+            <img src="./img/Logo.svg" alt="logo">
+          </header>
+          <p class="mt-[72px] text-base text-center text-darkBlue leading-[26px]">
+            Hello, Сrazyfish!
+          </p>
+          <p class="mb-6 text-base text-center text-darkBlue leading-[26px]">
+            You recently requested a password reset
+          </p>
+          <a
+              href="./verification.html"
+              class="py-3 px-8 bg-primary rounded-xl text-white hover:opacity-60 duration-150 easy-in text-sm font-bold uppercase tracking-wide"
+          >
+            Reset Password
+          </a>
+
+          <p class="text-center mt-[72px] text-gray text-base leading-[26px] font-normal">
+            If you didn't do it, ignore this email
+          </p>
+        </div>
+
+        <footer class="mt-8 sm:bg-secondary sm:rounded-2xl sm:py-8 sm:px-4">
+          <div class="flex items-center justify-center gap-5">
+            <a href="#" class="hover:opacity-60 duration-150 easy-in"> <img src="./img/FB.svg" alt="facebook"> </a>
+            <a href="#" class="hover:opacity-60 duration-150 easy-in"> <img src="./img/Discord.svg" alt="discord"> </a>
+            <a href="#" class="hover:opacity-60 duration-150 easy-in"> <img src="./img/TG.svg" alt="telegram"> </a>
+            <a href="#" class="hover:opacity-60 duration-150 easy-in"> <img src="./img/WhatsApp.svg" alt="whatsapp"> </a>
+          </div>
+
+          <p class="text-gray text-sm leading-[24px] mt-3 text-center">
+            © 2023, BroPlays Limited. All rights reserved.
+          </p>
+
+          <a href="#" class="block text-gray text-sm leading-[24px] text-center underline hover:opacity-60 duration-150 easy-in">Support</a>
+        </footer>
+      </section>
+
+    </div>
+  </body>
+</html>
